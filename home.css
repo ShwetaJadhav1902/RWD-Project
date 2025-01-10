@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Video Section */
+.video-container {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: calc(100vh - 50px);
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: violet;
+    font-size: 3rem;
+    font-style: italic;
+}*/
+
+/* Politicians Section */
+.politicians-container {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.politicians-container h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.politicians-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.politician {
+    width: 23%;
+    text-align: center;
+}
+
+.politician img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.politician img:hover {
+    transform: scale(1.05);
+}
+
+.politician h3 {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* places section*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.places-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.place {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.place img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.info {
+    max-width: 600px;
+}
+
+.info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 16px;
+    color: #666;
+}
+/* Alternate layout */
+.place:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Transport Section */
+.transport-container {
+    margin-top: 70px;
+    padding: 20px;
+}
+
+.transport-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.transport-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.transport-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.transport-table th, .transport-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.transport-table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+.transport-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.transport-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Images Styling */
+.transport-image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.bus-image {
+    width: 400px;
+}
+
+.metro-image {
+    width: 400px;
+}

@@ -1,0 +1,113 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Places.html">Places</a></li>
+            <li><a href="transport.html">Transport</a></li>
+        </ul>
+    </nav>
+
+    <!-- Video Section -->
+    <section class="video-container">
+        <video autoplay muted loop>
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+           <!---- <div class="overlay">
+                <h1 >Welcome to Pune </h1>
+            </div>-->
+
+    </section>
+
+    <!-- Politicians Section -->
+    <section class="politicians-container">
+        <h1>Famous Personalities</h1>
+        <div class="politicians-grid">
+            <!-- Politician 1 -->
+            <div class="politician">
+                <img src="savitribai phule.jpeg" alt="Person 1" class="politician-image" onclick="openModal('modal1')">
+                <h3>Savitribai Phule</h3>
+            </div>
+            <!-- Politician 2 -->
+            <div class="politician">
+                <img src="chatrapati shivaji maharaj.jpeg" alt="Person 2" class="politician-image" onclick="openModal('modal2')">
+                <h3>Chatrapati Shivaji Maharaj</h3>
+            </div>
+            <!-- Politician 3 -->
+            <div class="politician">
+                <img src="lokmanya tilak.jpeg" alt="Person 3" class="politician-image" onclick="openModal('modal3')">
+                <h3>Lokmanya Tilak</h3>
+            </div>
+            <!-- Politician 4 -->
+            <div class="politician">
+                <img src="maharshi karve.jpg" alt="Person 4" class="politician-image" onclick="openModal('modal4')">
+                <h3>Mharashi Karve</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Politicians -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Savitribai Phule</h2>
+            <p>Savitribai Phule was a social reformer and educator, known for her efforts in promoting women's rights and education in India.Savitribai Phule was a trailblazer in providing education for girls and for ostracized portions of society. She became the first female teacher in India (1848) and opened a school for girls with her husband, Jyotirao Phule. She went on to establish a shelter (1864) for destitute women and played a crucial role in grooming Jyotirao Phule’s pioneering institution, Satyashodhak Samaj, (1873) that fought for equality of all classes.Her life is heralded as a beacon of women’s rights in India. She is often referred to as the mother of Indian feminism.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Chhatrapati Shivaji Maharaj</h2>
+            <p>Chhatrapati Shivaji Maharaj was a Maratha warrior and founding ruler of the Maratha empire in western India. In India and even in other countries, he is still considered the greatest warrior of his time. Chhatrapati Shivaji Maharaj also spelled as Sivaji was born on 19 February 1630. He was born at Shivneri which is a hill fort in Junnar in Poona, now known as Pune. Chhatrapati Shivaji Maharaj took birth into a family of bureaucrats. His father Shahji Bhonsale was a great Maratha general in the army of Bijapur Sultanate and his mother Jijabai was a great devotee of religion. He was the founder of the great Maratha kingdom of India. He was one of the bravest and marvelous rulers in the 17th century.
+
+ 
+                Life History of Chhatrapati Shivaji Maharaj
+                Chhatrapati Shivaji Maharaj was the founder of the Maratha kingdom of India. The kingdom's security was entirely based on religious tolerance and the functional integration of Brahmans, Marathas, and Prabhus.
+                
+                 
+                
+                Shivaji Maharaj who was the descendant of a line of prominent nobles was very brave and fought many wars to consolidate India. At that time, India was under the Muslim rulers and divided. The Mughals were in north India and the Muslim sultans of Bijapur as well as of Golconda in the south of India. 
+                
+                 </p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Lokmanya Tilak</h2>
+            <p>Tilak was born into a cultured middle-class Brahman family. Although his birth place was Bombay (Mumbai), he was raised in a village along the Arabian Sea coast in what is now Maharashtra state until the age of 10, when his father, an educator and noted grammarian, took a job in Poona (now Pune). The young Tilak was educated at Deccan College in Poona, where in 1876,he earned bachelor’s degrees in mathematics and Sanskrit. Tilak then studied law, receiving his degree in 1879 from the University of Bombay (now Mumbai). At that point, however, he decided to teach mathematics in a private school in Poona. The school became the basis for his political career. </p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>Maharshi Karve</h2>
+            <p>Dhondo Keshav Karve (18 April 1858 – 9 November 1962), popularly known as Maharshi Karve, was a social reformer in India in the field of women's welfare. He advocated widow remarriage, and he himself remarried a widow as a widower. Karve was a pioneer in promoting widows' education. He founded the first women's university in India, the SNDT Women's University in 1916.[1] The Government of India awarded him with the highest civilian award, the Bharat Ratna, in 1958, the year of his 100th birthday. He organized a conference against the practice of devdasi. He started 'Anath balikashram' an orphanage for girls. His intention was to give education to all women and make them stand on their own feet. Through his efforts, the first women university was set up in 20th century.</p>
+        </div>
+    </div>
+
+    <script>
+        // Function to open modal
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        // Function to close modal
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
